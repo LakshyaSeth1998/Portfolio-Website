@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <!-- <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script> -->
+</head>
+<body>
+
+    <div id="particles-js">
+    </div>
+
+    <nav id="desktop-nav">
+        <div class="logo">Lakshya Seth</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <nav id="hamburger-nav">
+        <div class="logo">Lakshya Seth</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Lakshya Seth Profile Image" style="border-radius: 20rem;">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Lakshya Seth</h1>
+            <p class="section__text__p2">Fullstack Developer</p>
+            <div class="btn-container">
+            <button
+                class="btn btn-color-2"
+                onclick="window.open('./assets/Lakshya_Seth_27-07-23.pdf')"
+            >
+                Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info
+            </button>
+            <div id="socials-container">
+                <img
+                  src="./assets/linkedin.png"
+                  alt="My LinkedIn profile"
+                  class="icon"
+                  onclick="location.href='https://www.linkedin.com/in/lakshya-seth/'"
+                />
+                <img
+                  src="./assets/github.png"
+                  alt="My Github profile"
+                  class="icon"
+                  onclick="location.href='https://github.com/LakshyaSeth1998'"
+                />
+              </div>
+        </div>
+        
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1 animated-top">Get To Know More</p>
+        <h1 class="title animated-top">About Me</h1>
+        <div class="section-container">
+          <!-- <div class="section__pic-container">
+            <img
+              src="./assets/about-pic.png"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div> -->
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container details-container-compact animated-left">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <div class="experience">
+                  <div class="experience-item">
+                    <img
+                      src="./assets/laptop-logo.png"
+                      class="icon"
+                    />
+                    <div class="company-data">
+                      <div class="company-info">
+                        Nagarro  |  Software Engineer
+                      </div>
+                      <div class="company-duration">
+                        July'21 - Present
+                      </div>
+                      <div class="company-work">
+                        Worked on the development of a versatile portal with admin and user websites, integrating APIs, enhancing UI, and resolving bugs. Implemented a transition from monolithic to microservices architecture , ensuring scalable deployment. Integrated AWS Pinpoint for enhanced user engagement. Technologies include ASP.NET, Angular, AWS Services, Azure services etc.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="experience-item">
+                    <img
+                      src="./assets/laptop-logo.png"
+                      class="icon"
+                    />
+                    <div class="company-data">
+                      <div class="company-info">
+                        Chegg  |  Computer Science And Subject Matter Expert
+                      </div>
+                      <div class="company-duration">
+                        Part Time
+                      </div>
+                      <div class="company-work">
+                        Facilitated students in understanding fundamentals of Computer Science by solving their doubts and explaining them concepts.
+                      </div>
+                    </div>
+                  </div>
+                </div>  
+                <!-- <p>2+ years <br />Fullstack Development</p> -->
+              </div>
+              <div class="details-container details-container-compact animated-right">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <div class="education">
+                  <div class="education-details">
+                    <img
+                      src="./assets/graduation-hat-img.png"
+                      class="icon"
+                    />
+                    <div class="education-item">
+                      <div class="education-institute">
+                        Netaji Subhas Institue Of Technology, Delhi
+                      </div>
+                      <div class="education-degree">
+                        BE in Instrumentation & Control Engineering | 2017-2021
+                      </div>   
+                      <div class="education-result">
+                        CGPA 7.54
+                      </div>
+                    </div>
+                  </div>
+                  <div class="education-details">
+                    <img
+                      src="./assets/graduation-hat-img.png"
+                      class="icon"
+                    />
+                    <div class="education-item">
+                      <div class="education-institute">
+                        Delhi Public School, Varanasi | 2016-2017
+                      </div>
+                      <div class="education-degree">
+                        CBSE Class XII
+                      </div>
+                      <div class="education-result">
+                        Percentage 92.8%
+                      </div>
+                    </div>
+                  </div>
+                  <div class="education-details">
+                    <img
+                      src="./assets/graduation-hat-img.png"
+                      class="icon"
+                    />
+                    <div class="education-item">
+                      <div class="education-institute">
+                        Delhi Public School, Varanasi
+                      </div>
+                      <div class="education-degree">
+                        CBSE Class X | 2014-2015
+                      </div>
+                      <div class="education-result">
+                        CGPA 9.6
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <p>B.E. in Instrumentation & Control Engineering</p> -->
+              </div>
+            </div>
+            <div class="text-container animated-bottom">
+              <p>
+                I'm an experienced Software Engineer with a two-year track record. I'm passionate about crafting interactive and user-centric websites that leave a lasting impression. My versatile skill set spans across a range of technologies including Dotnet, Angular, MySql, Azure, AWS, and SFMC. My strength lies in designing dynamic and robust solutions. Proficient in Data Structures and Algorithms, I consistently achieve top rankings on platforms like Leetcode. I'm dedicated to delivering high-quality solutions that exceed expectations.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#skills'"
+        />
+      </section>
+
+      <section id="skills">
+        <p class="section__text__p1 animated-top">Check Out My</p>
+        <h1 class="title animated-top">Skills</h1>
+        <div class="experience-details-container">
+          <div class="about-containers about-containers-skill">
+            <div class="details-container details-container-compact animated-left">
+                <h2 class="experience-sub-title">Programming Languages</h2>
+                <div class="article-container">
+                  <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>C++</h3>
+                        <p>Experienced</p>
+                      </div>
+                    </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>C#</h3>
+                      <p>Experienced</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Java</h3>
+                      <p>Intermediate</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>JavaSrcipt</h3>
+                      <p>Intermediate</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>TypeScript</h3>
+                      <p>Intermediate</p>
+                    </div>
+                  </article>
+                </div>
+            </div>
+            <div class="details-container details-container-compact animated-right">
+              <h2 class="experience-sub-title">Web Technologies</h2>
+              <div class="article-container">
+                <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Dotnet</h3>
+                      <p>Experienced</p>
+                    </div>
+                  </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Bootstrap</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Angular</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>React</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Spring Boot</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-containers about-containers-skill">
+            <div class="details-container details-container-compact animated-left">
+                <h2 class="experience-sub-title">Azure Services</h2>
+                <div class="article-container">
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>App Service</h3>
+                      <p>Basic</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>SQL Databases</h3>
+                      <p>Intermediate</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Function App</h3>
+                      <p>Intermediate</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Service Bus Queue</h3>
+                      <p>Intermediate</p>
+                    </div>
+                  </article>
+                </div>
+            </div>
+            <div class="details-container details-container-compact animated-right">
+              <h2 class="experience-sub-title">AWS Services</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>IAM</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>S3</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>EC2</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>RDS</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Lambda</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Pinpoint</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+          </div>
+          </div>
+
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+      </section>
+
+      <section id="projects">
+        <p class="section__text__p1 animated-top">Browse My Recent</p>
+        <h1 class="title animated-top">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container animated-left">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">IPL Dashboard</h2>
+              <p class="project-desc">
+                Designed and implemented a dynamic dashboard for the Indian Premier League, leveraging Spring Boot for a robust backend and React for a user-friendly front-end. The dashboard seamlessly integrates statistical data from a Kaggle dataset, ensuring modularity and reusability in design.
+              </p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/LakshyaSeth1998/IplDashboard'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='http://ipldashboard-env.eba-y3gy8ut3.ap-southeast-2.elasticbeanstalk.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container animated-left">
+              <div class="article-container">
+                <img
+                  src="./assets/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Recipe Book</h2>
+              <p class="project-desc">
+                Developed a comprehensive E-commerce website with Angular at the forefront, offering features such as user authentication, recipe management, and ingredient handling. The platform is backed by Firebase, providing a secure and efficient backend for seamless user experiences.
+              </p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/LakshyaSeth1998/recipe-bool'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://recipe-book-project-25412.web.app'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container animated-left">
+              <div class="article-container">
+                <img
+                  src="./assets/project-3.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">YelpCamp</h2>
+              <p class="project-desc">
+                Crafted a responsive web application facilitating campground reviews, encompassing user authentication, review posting, commenting, and editing functionalities. The project employs a blend of HTML5, CSS, NodeJS, Express, MongoDB, and Bootstrap for an engaging platform.
+              </p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/LakshyaSeth1998/Web-Dev-BootCamp/tree/master/YelpCamp'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='http://yelp-camp-env-1.eba-x8fiqgwy.ap-southeast-2.elasticbeanstalk.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#certificates'"
+        />
+      </section>
+
+      <section id="certificates">
+        <p class="section__text__p1 animated-top" style="padding-top: 5px;">Look Around My</p>
+        <h1 class="title animated-top">Certificates</h1>
+        <div class="certificates-container">
+          <div class="certificate animated-left">
+            <div class="certificate-symbol">
+              <img src="./assets/aws-cloud-pratitioner-logo2.png" class="certificate-img">
+            </div>
+            <div class="certificate-data">
+              <div class="certificate-name">
+                AWS Certificate Cloud Practitioner
+              </div>
+              <div class="certificate-desc">
+                Validates foundational AWS knowledge, including architectural best practices and the shared responsibility model. Demonstrates proficiency in leveraging cloud technologies to drive effective business solutions.
+              </div>
+              <button
+                class="btn btn-color-2 btn-big"
+                onclick="window.location.href='https://drive.google.com/file/d/1f7OhvzP68A-NppxMO5jNTIzGvhIj8F_s/view?usp=sharing'"
+            >
+                Download Certificate
+            </button>
+            </div>
+          </div>
+          <div class="certificate animated-right">
+            <div class="certificate-symbol">
+              <img src="./assets/cn-logo2.png" class="certificate-img">
+            </div>
+            <div class="certificate-data">
+              <div class="certificate-name">
+                Excellence in Competitive Programming - Coding Ninjas
+              </div>
+              <div class="certificate-desc">
+                This "Excellence Certificate" is awarded in recognition of achieving an exceptional score of 97% in the Competitive Programming course by Coding Ninjas. It signifies a high level of proficiency in algorithmic problem-solving and coding challenges.
+              </div>
+              <button
+                class="btn btn-color-2 btn-big"
+                onclick="window.location.href='https://drive.google.com/file/d/1aQL5Ch-GyMbgyebyfQ4O41eAh_-kRPSh/view?usp=sharing'"
+            >
+                Download Certificate
+            </div>
+          </div>
+          <div class="certificate animated-left">
+            <div class="certificate-symbol">
+              <img src="./assets/udemy-logo2.png" class="certificate-img">
+            </div>
+            <div class="certificate-data">
+              <div class="certificate-name">
+                Web Development Proficiency - The Web Developer Bootcamp
+              </div>
+              <div class="certificate-desc">
+                This certification attests to successful completion of Colt Steele's comprehensive "Web Developer Bootcamp" on Udemy. It covers front-end and back-end technologies, providing a solid foundation for building dynamic and responsive web applications.
+              </div>
+              <button
+                class="btn btn-color-2 btn-big"
+                onclick="window.location.href='https://drive.google.com/file/d/1WNeBpTdqAkPIIbaSODL8vZCxTn9QKOIR/view?usp=sharing'"
+            >
+                Download Certificate
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+
+      <section id="contact">
+        <p class="section__text__p1 animated-top">Get in Touch</p>
+        <h1 class="title animated-top">Contact Me</h1>
+        <div class="contact-info-upper-container animated-left">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:sethlakshya98@gmail.com">sethlakshya98@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/lakshya-seth/">LinkedIn</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/mobile-logo.jpg"
+              alt="Phone icon"
+              class="icon contact-icon"
+            />
+            <p><a href="tel:+919648217799">+91 9648217799</a></p>
+          </div>
+
+        </div>
+        <form id="contact-form" onsubmit="sendEmail(); reset(); return false;">
+          <input type="text" class="animated-left" id="name" name="name" placeholder=" Your Name" required><br>
+
+          <input type="email" class="animated-left" id="email" name="email" placeholder=" Email Address" required><br>
+
+          <textarea id="message" class="animated-left" name="message" placeholder=" Type Your Message" required></textarea><br>
+
+          <input type="submit" class="animated-left" value="Submit">
+        </form>
+      </section>
+      <!-- <div class="container-custom">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/gray-bg.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                jdljfldjdflfjklokf;dk;fkd;dkf<br>
+                jdljfldjdflfjklokf;dk;fkd;dkf<br>jdljfldjdflfjklokf;dk;fkd;dkf<br>
+                jdljfldjdflfjklokf;dk;fkd;dkf<br>
+                jdljfldjdflfjklokf;dk;fkd;dkf<br>
+                jdljfldjdflfjklokf;dk;fkd;dkf<br>
+                jdljfldjdflfjklokf;dk;fkd;dkf<br>
+                jdljfldjdflfjklokf;dk;fkd;dkf<br>
+                jdljfldjdflfjklokf;dk;fkd;dkf<br>
+                jdljfldjdflfjklokf;dk;fkd;dkf<br>
+                jdljfldjdflfjklokf;dk;fkd;dkf<br>
+                jdljfldjdflfjklokf;dk;fkd;dkf<br>
+                jkdchdi bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb<br>
+                jkdsjdjsjdl
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/gray-bg.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                
+                      <div class="details-container details-container-compact">
+                        <img
+                          src="./assets/experience.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <div class="experience">
+                          <div class="experience-item">
+                            <img
+                              src="./assets/laptop-logo.jpg"
+                              class="icon"
+                            />
+                            <div class="company-data">
+                              <div class="company-info">
+                                Nagarro  |  Software Engineer
+                              </div>
+                              <div class="company-duration">
+                                July'21 - Present
+                              </div>
+                              <div class="company-work">
+                                Worked on the development of a versatile portal with admin and user websites, integrating APIs, enhancing UI, and resolving bugs. Implemented a transition from monolithic to microservices architecture , ensuring scalable deployment. Integrated AWS Pinpoint for enhanced user engagement. Technologies include ASP.NET, Angular, AWS Services, Azure services etc.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="experience-item">
+                            <img
+                              src="./assets/laptop-logo.jpg"
+                              class="icon"
+                            />
+                            <div class="company-data">
+                              <div class="company-info">
+                                Chegg  |  Computer Science And Subject Matter Expert
+                              </div>
+                              <div class="company-duration">
+                                Part Time
+                              </div>
+                              <div class="company-work">
+                                Facilitated students in understanding fundamentals of Computer Science by solving their doubts and explaining them concepts.
+                              </div>
+                            </div>
+                          </div>
+                        </div>  
+                      </div>
+                      
+                  
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/gray-bg.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div> -->
+      
+      <!-- <footer> -->
+        <!-- <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav> -->
+      <!-- </footer> -->
+
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      <script type="text/javascript">
+        (function(){
+            emailjs.init("7SPbt4p44G3jFnC9H");
+        })();
+      </script>
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script src="script.js"></script>
+    
+</body>
+</html>
