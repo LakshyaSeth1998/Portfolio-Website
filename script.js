@@ -139,13 +139,26 @@ document.addEventListener('DOMContentLoaded', function() {
       });
 });
 
+function showMessage(){
+    const successMessage = document.getElementById("success-message");
+    successMessage.textContent = "Your message has been sent successfully !";
+    successMessage.classList.add("show");
+    // Hide the success message after 5 seconds (adjust as needed)
+    setTimeout(() => {
+        successMessage.classList.remove("show");
+    }, 5000);
+}
+
 function sendEmail(){
     let params= {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
         message: document.getElementById("message").value,
     }
+    
     //using email js here
     emailjs.send("service_530fzzo","template_w0g7n73",params)
-        .then(alert("email has been sent"));
+        .then(
+              showMessage()
+        );
 }

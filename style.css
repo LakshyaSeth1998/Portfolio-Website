@@ -674,7 +674,7 @@ section .visible {
   opacity: 0; /* Initially set the opacity to 0 */
   filter: blur(5px);
   transform: translateY(100px); /* Move the element down by 30px initially */
-  transition: all 0.7s; /* Apply transitions */
+  transition: all 0.5s; /* Apply transitions */
 }
 
 /* Add a class for elements that should appear on scroll */
@@ -694,7 +694,7 @@ section .visible {
   opacity: 0; /* Initially set the opacity to 0 */
   filter: blur(5px);
   transform: translateY(-100px); /* Move the element down by 30px initially */
-  transition: all 0.7s; /* Apply transitions */
+  transition: all 0.5s; /* Apply transitions */
 }
 
 /* Add a class for elements that should appear on scroll */
@@ -714,7 +714,7 @@ section .visible {
   opacity: 0; /* Initially set the opacity to 0 */
   filter: blur(5px);
   transform: translateX(-100px); /* Move the element down by 30px initially */
-  transition: all 0.7s; /* Apply transitions */
+  transition: all 0.5s; /* Apply transitions */
 }
 
 /* Add a class for elements that should appear on scroll */
@@ -734,7 +734,7 @@ section .visible {
   opacity: 0; /* Initially set the opacity to 0 */
   filter: blur(5px);
   transform: translateX(100px); /* Move the element down by 30px initially */
-  transition: all 0.7s; /* Apply transitions */
+  transition: all 0.5s; /* Apply transitions */
 }
 
 /* Add a class for elements that should appear on scroll */
@@ -849,4 +849,25 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #45a049;
+}
+
+.success-message {
+  display: none;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #66d369;
+  color: white;
+  border-radius: 5px;
+}
+
+.success-message.show {
+  display: block;
+  animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+      opacity: 0;
+  }
 }
