@@ -507,6 +507,7 @@ section {
   
   #projects {
     position: relative;
+    z-index: 2;
   }
   
   .color-container {
